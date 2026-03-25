@@ -1,0 +1,417 @@
+{
+    "devocionales": [
+        {
+            "id": 1,
+            "fecha": "domingo, 1 de febrero de 2026",
+            "titulo": "El Arte En La Guerra",
+            "versiculo": "Cuando empezaron a entonar cantos de alabanza, el Señor puso emboscadas contra los de Amón, los de Moab y los del monte Seir, que venían contra Judá, y se mataron unos a otros.",
+            "cita": "2 Crónicas 20:22"
+        },
+        {
+            "id": 2,
+            "fecha": "lunes, 2 de febrero de 2026",
+            "titulo": "Pies De Evangelista",
+            "versiculo": "¡Cuán hermosos son los pies de los que anuncian las buenas noticias!",
+            "cita": "Romanos 10:15"
+        },
+        {
+            "id": 3,
+            "fecha": "martes, 3 de febrero de 2026",
+            "titulo": "El Héroe Torpe",
+            "versiculo": "Pero Jonás se levantó para huir a Tarsis de la presencia del Señor.",
+            "cita": "Jonás 1:3"
+        },
+        {
+            "id": 4,
+            "fecha": "miércoles, 4 de febrero de 2026",
+            "titulo": "Él Hace Que El Tiempo Se Detenga",
+            "versiculo": "Pero, amados, no ignoren esto: Para el Señor, un día es como mil años; y mil años, como un día.",
+            "cita": "2 Pedro 3:8"
+        },
+        {
+            "id": 5,
+            "fecha": "jueves, 5 de febrero de 2026",
+            "titulo": "La Desventaja De La Tecnología",
+            "versiculo": "No se conformen a este mundo, sino transfórmense mediante la renovación de su entendimiento.",
+            "cita": "Romanos 12:2"
+        },
+        {
+            "id": 6,
+            "fecha": "viernes, 6 de febrero de 2026",
+            "titulo": "Un Solo Pedido",
+            "versiculo": "Una sola cosa he demandado al Señor, esta buscaré: que esté yo en la casa del Señor todos los días de mi vida, para contemplar la hermosura del Señor e inquirir en su templo.",
+            "cita": "Salmo 27:4"
+        },
+        {
+            "id": 7,
+            "fecha": "sábado, 7 de febrero de 2026",
+            "titulo": "Microrrevolución",
+            "versiculo": "No nos cansemos de hacer el bien, porque a su debido tiempo cosecharemos si no nos damos por vencidos.",
+            "cita": "Gálatas 6:9, NVI"
+        },
+        {
+            "id": 8,
+            "fecha": "domingo, 8 de febrero de 2026",
+            "titulo": "El Hombre Pastel",
+            "versiculo": "Si quiero que él permanezca hasta que yo vuelva, ¿qué te importa a ti?",
+            "cita": "Juan 21:23, DHH"
+        },
+        {
+            "id": 9,
+            "fecha": "lunes, 9 de febrero de 2026",
+            "titulo": "El Lugar Del Silencio",
+            "versiculo": "Muy temprano de mañana, aún oscuro, Jesús se levantó, fue a un lugar solitario y se puso a orar.",
+            "cita": "Marcos 1:35"
+        },
+        {
+            "id": 10,
+            "fecha": "martes, 10 de febrero de 2026",
+            "titulo": "El Amigo De Los Pecadores",
+            "versiculo": "Los fariseos y los escribas murmuraban: \"Este hombre recibe a los pecadores y come con ellos\".",
+            "cita": "Lucas 15:2"
+        },
+        {
+            "id": 11,
+            "fecha": "miércoles, 11 de febrero de 2026",
+            "titulo": "Hablar Con Dios",
+            "versiculo": "Oren sin cesar.",
+            "cita": "1 Tesalonicenses 5:17"
+        },
+        {
+            "id": 12,
+            "fecha": "jueves, 12 de febrero de 2026",
+            "titulo": "El Hombre Del Sombrero",
+            "versiculo": "Caminó, pues, Enoc con Dios, y desapareció, porque Dios se lo llevó.",
+            "cita": "Génesis 5:24"
+        },
+        {
+            "id": 13,
+            "fecha": "viernes, 13 de febrero de 2026",
+            "titulo": "Amor Absurdo",
+            "versiculo": "Un hombre tenía dos hijos.",
+            "cita": "Lucas 15:11"
+        },
+        {
+            "id": 14,
+            "fecha": "sábado, 14 de febrero de 2026",
+            "titulo": "El Buen Chisme",
+            "versiculo": "No andarás chismeando entre tu pueblo. No demandes contra la vida de tu prójimo. Yo soy el Señor.",
+            "cita": "Levítico 19:16"
+        },
+        {
+            "id": 15,
+            "fecha": "domingo, 15 de febrero de 2026",
+            "titulo": "El Poder De La Música",
+            "versiculo": "Mientras el músico tañía el arpa, la mano del Señor vino sobre Eliseo.",
+            "cita": "2 Reyes 3:15, NVI"
+        },
+        {
+            "id": 16,
+            "fecha": "lunes, 16 de febrero de 2026",
+            "titulo": "En La Frontera De La Fe",
+            "versiculo": "Así, fijamos nuestros ojos no en lo que se ve, sino en lo que no se ve. Porque lo que se ve es temporal, pero lo que no se ve es eterno.",
+            "cita": "2 Corintios 4:18"
+        },
+        {
+            "id": 17,
+            "fecha": "martes, 17 de febrero de 2026",
+            "titulo": "El Peligro Del Éxito",
+            "versiculo": "¡Ay de los que se consideran sabios, de los que se creen inteligentes!",
+            "cita": "Isaías 5:21, NVI"
+        },
+        {
+            "id": 18,
+            "fecha": "miércoles, 18 de febrero de 2026",
+            "titulo": "El Brillo De La Muerte",
+            "versiculo": "Lo que entra en la boca no contamina al hombre. Lo que sale de la boca, eso contamina al hombre.",
+            "cita": "Mateo 15:11"
+        },
+        {
+            "id": 19,
+            "fecha": "jueves, 19 de febrero de 2026",
+            "titulo": "Madurez",
+            "versiculo": "Cuando yo era niño hablaba como niño, pensaba como niño, razonaba como niño. Pero cuando llegué a ser hombre, dejé lo que era de niño.",
+            "cita": "1 Corintios 13:11"
+        },
+        {
+            "id": 20,
+            "fecha": "viernes, 20 de febrero de 2026",
+            "titulo": "Una División Buena",
+            "versiculo": "Si decimos que estamos en comunión con él y andamos en tinieblas, mentimos, y no practicamos la verdad.",
+            "cita": "1 Juan 1:6"
+        },
+        {
+            "id": 21,
+            "fecha": "sábado, 21 de febrero de 2026",
+            "titulo": "Sentido Del Humor",
+            "versiculo": "iRegocijense en el Señor siempre! Repito: iRegocijense!.",
+            "cita": "Filipenses 4:4"
+        },
+        {
+            "id": 22,
+            "fecha": "domingo, 22 de febrero de 2026",
+            "titulo": "Gracia Inclusiva",
+            "versiculo": "Tómala y vete. Quiero darle al último obrero contratado lo mismo que te di a ti.",
+            "cita": "Mateo 20:14, NVI"
+        },
+        {
+            "id": 23,
+            "fecha": "lunes, 23 de febrero de 2026",
+            "titulo": "León",
+            "versiculo": "Sean sobrios y velen; porque su adversario el diablo, cual león rugiente, anda alrededor buscando a quien devorar.",
+            "cita": "1 Pedro 5:8"
+        },
+        {
+            "id": 24,
+            "fecha": "martes, 24 de febrero de 2026",
+            "titulo": "Ocúpate De Las Pequeñas Cosas",
+            "versiculo": "Cácennos las zorras, las zorras pequeñas, que destruyen las viñas; porque nuestras viñas están en flor.",
+            "cita": "Cantares 2:15"
+        },
+        {
+            "id": 25,
+            "fecha": "miércoles, 25 de febrero de 2026",
+            "titulo": "Fabrica De Ídolos",
+            "versiculo": "Hijo de Adán, estos hombres han puesto ídolos en su corazón y malvados tropiezos ante sí. ¿Acaso dejaré que me consulten?",
+            "cita": "Ezequiel 14:3"
+        },
+        {
+            "id": 26,
+            "fecha": "jueves, 26 de febrero de 2026",
+            "titulo": "Jóvenes De Trapo",
+            "versiculo": "Les estoy escribiendo, jóvenes, porque son fuertes, la palabra de Dios mora en ustedes y han vencido al maligno.",
+            "cita": "1 Juan 2:14"
+        },
+        {
+            "id": 27,
+            "fecha": "viernes, 27 de febrero de 2026",
+            "titulo": "Amor (I)Limitado",
+            "versiculo": "Y pido que [...] puedan comprender [...] cuán ancho y largo, alto y profundo es el amor de Cristo [...] que sobrepasa nuestro conocimiento\".",
+            "cita": "Efesios 3:17-19, NVI"
+        },
+        {
+            "id": 28,
+            "fecha": "sábado, 28 de febrero de 2026",
+            "titulo": "Olor De Muerte",
+            "versiculo": "Porque para Dios somos buen aroma de Cristo.",
+            "cita": "2 Corintios 2:15"
+        },
+        {
+            "id": 29,
+            "fecha": "domingo, 1 de marzo de 2026",
+            "titulo": "La Mujer Invisible",
+            "versiculo": "No había brillo en los ojos de Lea.",
+            "cita": "Génesis 29:17, NTV"
+        },
+        {
+            "id": 30,
+            "fecha": "lunes, 2 de marzo de 2026",
+            "titulo": "Jesús Y Los Discriminados",
+            "versiculo": "Vino una mujer samaritana a sacar agua, y Jesús le dijo: \"Dame de beber\".",
+            "cita": "Juan 4:7"
+        },
+        {
+            "id": 31,
+            "fecha": "martes, 3 de marzo de 2026",
+            "titulo": "El Poder De Los Sirvientes",
+            "versiculo": "Antes lo necio del mundo eligió Dios, para avergonzar a los sabios; lo débil del mundo eligió Dios, para avergonzar a lo fuerte.",
+            "cita": "1 Corintios 1:27"
+        },
+        {
+            "id": 32,
+            "fecha": "miércoles, 4 de marzo de 2026",
+            "titulo": "El Pequeño gran Hombre",
+            "versiculo": "Saulo, Saulo, ¿por qué me persigues?",
+            "cita": "Hechos 22:7"
+        },
+        {
+            "id": 33,
+            "fecha": "jueves, 5 de marzo de 2026",
+            "titulo": "Planeta Uti",
+            "versiculo": "El castigo que nos trae paz lo cargó él, y por su llaga fuimos sanados.",
+            "cita": "Isaías 53:5"
+        },
+        {
+            "id": 34,
+            "fecha": "viernes, 6 de marzo de 2026",
+            "titulo": "Gracia, Así de Simple",
+            "versiculo": "Por gracia han sido salvados por la fe. Y esto no proviene de ustedes, sino que es el don de Dios. No por obras, para que nadie se gloríe.",
+            "cita": "Efesios 2:8, 9"
+        },
+        {
+            "id": 35,
+            "fecha": "sábado, 7 de marzo de 2026",
+            "titulo": "La Selfie de Dios",
+            "versiculo": "La ley es santa, y el mandamiento santo, justo y bueno.",
+            "cita": "Romanos 7:12"
+        },
+        {
+            "id": 36,
+            "fecha": "domingo, 8 de marzo de 2026",
+            "titulo": "Mujer Ejemplar",
+            "versiculo": "Mujer virtuosa, ¿quién la hallará? Su valor excede mucho a las piedras preciosas.",
+            "cita": "Proverbios 31:10"
+        },
+        {
+            "id": 37,
+            "fecha": "lunes, 9 de marzo de 2026",
+            "titulo": "El Valor De Una Uña",
+            "versiculo": "Porque somos miembros de su cuerpo.",
+            "cita": "Efesios 5:30"
+        },
+        {
+            "id": 38,
+            "fecha": "martes, 10 de marzo de 2026",
+            "titulo": "Rumbo a Una Colisión",
+            "versiculo": "Pongan la mira en las cosas de arriba, no en las de la tierra.",
+            "cita": "Colosenses 3:2"
+        },
+        {
+            "id": 39,
+            "fecha": "miércoles, 11 de marzo de 2026",
+            "titulo": "Nacido para Luchar",
+            "versiculo": "Jacob respondió: \"No te dejaré, si no me bendices\".",
+            "cita": "Génesis 32:26"
+        },
+        {
+            "id": 40,
+            "fecha": "jueves, 12 de marzo de 2026",
+            "titulo": "Cuerdas",
+            "versiculo": "Al malvado lo atrapan sus malas obras; las cuerdas de su pecado lo aprisionan.",
+            "cita": "Proverbios 5:22, NVI"
+        },
+        {
+            "id": 41,
+            "fecha": "viernes, 13 de marzo de 2026",
+            "titulo": "Cajita de Promesas",
+            "versiculo": "Reconozcan con todo el corazón y con toda el alma que no faltó ni una palabra de las buenas promesas que el Señor su Dios había dicho. Todas se han cumplido, sin faltar ni una de ellas.",
+            "cita": "Josué 23:14"
+        },
+        {
+            "id": 42,
+            "fecha": "sábado, 14 de marzo de 2026",
+            "titulo": "Aves y Zorras",
+            "versiculo": "Jesús le respondió: \"Las zorras tienen cuevas; y las aves del cielo, nidos; pero el Hijo del hombre no tiene dónde reclinar la cabeza\".",
+            "cita": "Lucas 9:58"
+        },
+        {
+            "id": 43,
+            "fecha": "domingo, 15 de marzo de 2026",
+            "titulo": "Las Dos Caras de la Moneda",
+            "versiculo": "Bueno es el Señor; es refugio en el día de la angustia y conoce a los que en él confían.",
+            "cita": "Nahúm 1:7, NVI"
+        },
+        {
+            "id": 44,
+            "fecha": "lunes, 16 de marzo de 2026",
+            "titulo": "Los Emojis no Oran",
+            "versiculo": "Dios es Espíritu; y los que lo adoran deben adorarlo en espíritu y en verdad.",
+            "cita": "Juan 4:24"
+        },
+        {
+            "id": 45,
+            "fecha": "martes, 17 de marzo de 2026",
+            "titulo": "La Orquesta de Satanás",
+            "versiculo": "Tan pronto como escuchen el sonido de trompetas, flautas, cítaras, liras, arpas, zampoñas y todo tipo de música, deberán inclinarse y adorar la estatua de oro que el rey Nabucodonosor ha mandado erigir.",
+            "cita": "Daniel 3:5, NVI"
+        },
+        {
+            "id": 46,
+            "fecha": "miércoles, 18 de marzo de 2026",
+            "titulo": "El Dios Dinero",
+            "versiculo": "Ustedes no pueden servir a Dios y a las riquezas.",
+            "cita": "Lucas 16:13"
+        },
+        {
+            "id": 47,
+            "fecha": "jueves, 19 de marzo de 2026",
+            "titulo": "¿Quién es Jesús?",
+            "versiculo": "Y ustedes, ¿quién dicen que soy?",
+            "cita": "Mateo 16:15"
+        },
+        {
+            "id": 48,
+            "fecha": "viernes, 20 de marzo de 2026",
+            "titulo": "En el fondo del Pozo",
+            "versiculo": "Señor, de lo profundo clamo a ti. Señor, escucha mi voz, estén atentos tus oídos a la voz de mi súplica.",
+            "cita": "Salmo 130:1, 2"
+        },
+        {
+            "id": 49,
+            "fecha": "sábado, 21 de marzo de 2026",
+            "titulo": "Creyente Ostentación",
+            "versiculo": "Porque todo lo que hay en el mundo -los deseos de la carne, la codicia de los ojos y la soberbia de la vida no procede del Padre, sino del mundo.",
+            "cita": "1 Juan 2:16"
+        },
+        {
+            "id": 50,
+            "fecha": "domingo, 22 de marzo de 2026",
+            "titulo": "No Lo Dejes Para Después",
+            "versiculo": "No te jactes del día de mañana, porque no sabes lo que el día traerá.",
+            "cita": "Proverbios 27:1, NVI"
+        },
+        {
+            "id": 51,
+            "fecha": "lunes, 23 de marzo de 2026",
+            "titulo": "Alumno \"10”",
+            "versiculo": "El corazón prudente adquiere conocimiento; los oídos de los sabios procuran hallarlo.",
+            "cita": "Proverbios 18:15, NVI"
+        },
+        {
+            "id": 52,
+            "fecha": "martes, 24 de marzo de 2026",
+            "titulo": "Máquina del Tiempo",
+            "versiculo": "Estas cosas les sucedieron por ejemplo, y fueron escritas para advertirnos a nosotros, a los que han llegado al fin del tiempo.",
+            "cita": "1 Corintios 10:11"
+        },
+        {
+            "id": 53,
+            "fecha": "miércoles, 25 de marzo de 2026",
+            "titulo": "Efecto Dominó",
+            "versiculo": "En el principio Dios creó los cielos y la tierra.",
+            "cita": "Génesis 1:1"
+        },
+        {
+            "id": 54,
+            "fecha": "jueves, 26 de marzo de 2026",
+            "titulo": "La Fuerza de la Debilidad",
+            "versiculo": "Sacaron fuerza de la debilidad.",
+            "cita": "Hebreos 11:34"
+        },
+        {
+            "id": 55,
+            "fecha": "viernes, 27 de marzo de 2026",
+            "titulo": "Rostro de Ángel",
+            "versiculo": "Entonces todos los que estaban sentados en el concilio, al mirar a Esteban, vieron su rostro como el rostro de un ángel.",
+            "cita": "Hechos 6:15"
+        },
+        {
+            "id": 56,
+            "fecha": "sábado, 28 de marzo de 2026",
+            "titulo": "Crisis de Identidad",
+            "versiculo": "Porque eres tibio, ni frío ni caliente, estoy por vomitarte de mi boca.",
+            "cita": "Apocalipsis 3:16"
+        },
+        {
+            "id": 57,
+            "fecha": "domingo, 29 de marzo de 2026",
+            "titulo": "¿Zig o Zag?",
+            "versiculo": "Había confusión en la asamblea. Cada uno gritaba una cosa distinta, y la mayoría ni siquiera sabía para qué se habían reunido.",
+            "cita": "Hechos 19:32"
+        },
+        {
+            "id": 58,
+            "fecha": "lunes, 30 de marzo de 2026",
+            "titulo": "Desavenencias",
+            "versiculo": "Y hubo tal desacuerdo entre ellos que se separaron el uno del otro. Bernabé llevó a Marcos y navegó a Chipre ().",
+            "cita": "Hechos 15:39"
+        },
+        {
+            "id": 59,
+            "fecha": "martes, 31 de marzo de 2026",
+            "titulo": "Dar Hasta que Duela",
+            "versiculo": "iBaja de la cruz y sálvate a ti mismo!.",
+            "cita": "Marcos 15:30, NVI"
+        }
+    ]
+}
