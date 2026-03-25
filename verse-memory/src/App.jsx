@@ -1,119 +1,79 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import { useState, useEffect } from 'react'
 import './App.css'
+import UserSelector from './components/UserSelector'
+import Home from './components/Home'
+import StudyMode from './components/StudyMode'
+import PracticeMode from './components/PracticeMode'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [user, setUser] = useState(null);
+  const [mode, setMode] = useState('select_user'); // select_user, home, study, practice
+  const [devocionales, setDevocionales] = useState([]);
+
+  useEffect(() => {
+    fetch('/devocionales.json')
+      .then(res => res.json())
+      .then(data => {
+        if (data && data.devocionales) {
+          setDevocionales(data.devocionales);
+        }
+      })
+      .catch(err => console.error("Error loading devocionales:", err));
+  }, []);
+
+  const getUserData = () => {
+    if (!user) return [];
+    
+    const ranges = {
+      "Karen": [1, 10],
+      "Baruc": [11, 20],
+      "Gaby": [21, 29],
+      "Arely": [30, 39],
+      "Beto": [40, 49],
+      "Fredy": [50, 59]
+    };
+    
+    const [start, end] = ranges[user] || [0, 0];
+    return devocionales.filter(d => d.id >= start && d.id <= end);
+  };
+
+  const handleUserSelect = (selectedUser) => {
+    setUser(selectedUser);
+    setMode('home');
+  };
+
+  const resetUser = () => {
+    setUser(null);
+    setMode('select_user');
+  };
+
+  const goHome = () => setMode('home');
+
+  const userData = getUserData();
 
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+      <header className="app-header animate-fade-in">
+        {mode !== 'practice' && <h1 className="app-title">Aviva Matutina</h1>}
+        {mode === 'practice' && <h1 className="app-title" style={{fontSize: '1.5rem'}}>Modo Práctica</h1>}
+        
+        {user && mode !== 'select_user' && (
+          <p className="text-muted">
+             👋 ¡Hola, {user}!
+            <br />
+            <span style={{fontSize: '0.8rem', opacity: 0.7, cursor: 'pointer', textDecoration: 'underline'}} onClick={resetUser}>
+              (Cambiar nombre)
+            </span>
           </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+        )}
+      </header>
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+      <main className="flex-col gap-4 w-full h-full" style={{flex: 1}}>
+        {mode === 'select_user' && <UserSelector onSelect={handleUserSelect} />}
+        {mode === 'home' && <Home onSelectMode={setMode} />}
+        {mode === 'study' && <StudyMode data={userData} onBack={goHome} />}
+        {mode === 'practice' && <PracticeMode data={userData} onBack={goHome} />}
+      </main>
     </>
   )
 }
