@@ -53,7 +53,7 @@ function App() {
 
   return (
     <>
-      <header className="app-header animate-fade-in">
+      <header className="app-header animate-fade-in" style={{marginBottom: '16px'}}>
         {mode !== 'practice' && <h1 className="app-title">Aviva Matutina</h1>}
         {mode === 'practice' && <h1 className="app-title" style={{ fontSize: '1.5rem' }}>Modo Práctica</h1>}
 

@@ -110,14 +110,14 @@ export default function PracticeMode({ data, onBack }) {
 
   return (
     <div className="flex-col animate-fade-in" style={{height: '100%'}}>
-      <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px'}}>
-        <h2 style={{fontSize: '1.2rem'}}>🎯 Práctica</h2>
-        <button onClick={onBack} style={{background: 'rgba(255,255,255,0.1)', border: 'none', color: 'white', fontSize: '1.2rem', cursor: 'pointer', borderRadius: '50%', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+        <h2 style={{ fontSize: '1.1rem' }}>🎯 Práctica</h2>
+        <button onClick={onBack} style={{ background: 'rgba(255,255,255,0.1)', border: 'none', color: 'white', fontSize: '1.1rem', cursor: 'pointer', borderRadius: '50%', width: '36px', height: '36px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           ✕
         </button>
       </div>
 
-      <div className="glass-panel flex-col gap-4 flex-center text-center delay-1 animate-fade-in" style={{flex: 1, overflowY: 'auto', padding: '24px 16px', justifyContent: 'center'}}>
+      <div className="glass-panel flex-col gap-3 flex-center text-center delay-1 animate-fade-in no-scrollbar" style={{ flex: 1, overflowY: 'auto', padding: '16px 14px', justifyContent: 'center' }}>
         
         {/* MULTIPLE CHOICE UI */}
         {gameType === 'multiple_choice' && (
@@ -144,7 +144,7 @@ export default function PracticeMode({ data, onBack }) {
                   <button 
                     key={i} 
                     className="btn" 
-                    style={{...btnStyle, padding: '16px', fontSize: '1rem', whiteSpace: 'wrap'}}
+                    style={{...btnStyle, padding: '12px 16px', fontSize: '0.95rem', whiteSpace: 'wrap'}}
                     onClick={() => handleOptionClick(opt)}
                     disabled={status !== 'playing'}
                   >
@@ -162,9 +162,9 @@ export default function PracticeMode({ data, onBack }) {
             <p className="text-muted" style={{textTransform: 'uppercase', letterSpacing: '0.05em', fontSize: '0.85rem'}}>
               Completa el versículo
             </p>
-            <p style={{fontSize: '0.9rem', color: 'var(--accent)', fontWeight: 'bold'}}>{currentDev.cita}</p>
-            
-            <div style={{fontSize: '1.3rem', lineHeight: '2', marginTop: '16px', display: 'flex', flexWrap: 'wrap', gap: '6px', justifyContent: 'center'}}>
+            <p style={{ fontSize: '0.85rem', color: 'var(--accent)', fontWeight: 'bold' }}>{currentDev.cita}</p>
+
+            <div style={{ fontSize: '1.15rem', lineHeight: '1.8', marginTop: '12px', display: 'flex', flexWrap: 'wrap', gap: '6px', justifyContent: 'center' }}>
               {blanksData.map((item, i) => {
                 if (!item.hidden) {
                   return <span key={i}>{item.original}</span>;
@@ -210,23 +210,23 @@ export default function PracticeMode({ data, onBack }) {
 
         {/* FEEDBACK */}
         {status !== 'playing' && (
-          <div className="animate-fade-in flex-col flex-center" style={{marginTop: '24px', width: '100%', padding: '16px', background: 'rgba(0,0,0,0.2)', borderRadius: '16px'}}>
-            <h3 style={{marginBottom: '12px', color: status === 'won' ? 'var(--success)' : 'var(--error)'}}>
+          <div className="animate-fade-in flex-col flex-center" style={{ marginTop: '16px', width: '100%', padding: '12px', background: 'rgba(0,0,0,0.2)', borderRadius: '16px' }}>
+            <h3 style={{ marginBottom: '8px', color: status === 'won' ? 'var(--success)' : 'var(--error)', fontSize: '1.1rem' }}>
               {feedback}
             </h3>
-            
-            <div style={{marginBottom: '16px', fontSize: '0.95rem', color: 'white', opacity: 0.9, width: '100%'}}>
-              <strong style={{display: 'block', color: 'var(--accent)', marginBottom: '4px'}}>{currentDev.titulo}</strong>
-              <span style={{fontSize: '0.85rem', opacity: 0.8}}>{currentDev.fecha}</span>
+
+            <div style={{ marginBottom: '8px', fontSize: '0.85rem', color: 'white', opacity: 0.9, width: '100%' }}>
+              <strong style={{ display: 'block', color: 'var(--accent)', marginBottom: '2px' }}>{currentDev.titulo}</strong>
+              <span style={{ fontSize: '0.75rem', opacity: 0.8 }}>{currentDev.fecha}</span>
             </div>
 
             {status === 'lost' && gameType === 'fill_blanks' && (
-              <p style={{marginBottom: '16px', fontSize: '0.9rem', color: 'white', opacity: 0.9}}>
-                <strong>Respuesta correcta:</strong> "{currentDev.versiculo}"
+              <p style={{ marginBottom: '8px', fontSize: '0.8rem', color: 'white', opacity: 0.9 }}>
+                <strong>Respuesta:</strong> "{currentDev.versiculo}"
               </p>
             )}
-            <button className="btn btn-primary" onClick={startNewChallenge} style={{marginTop: '8px'}}>
-              Siguiente Devocional
+            <button className="btn btn-primary" onClick={startNewChallenge} style={{ marginTop: '4px', padding: '12px' }}>
+              Continuar
             </button>
           </div>
         )}
