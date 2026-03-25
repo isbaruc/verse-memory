@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+
+:root {
+  --bg-color: #071926;
+  --bg-gradient: linear-gradient(135deg, #1e3a5f, #071926);
+  --text-primary: #ffffff;
+  --text-secondary: #cde4f5;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  --accent: #10b981;
+  --accent-hover: #059669;
+  
+  --success: #34d399;
+  --error: #f87171;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background: var(--bg-gradient);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  /* Add subtle noise texture if possible, but keep it performant */
+}
+
+#root {
+  width: 100%;
+  max-width: 480px; /* Mobile first constraint */
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Glass Utilities */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  box-shadow: var(--glass-shadow);
+  padding: 24px;
+}
+
+.btn {
+  background: var(--glass-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--glass-border);
+  color: white;
+  padding: 16px 24px;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.btn:active {
+  transform: scale(0.96);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(255, 126, 187, 0.4);
+}
+
+.btn-primary:active {
+  background: var(--accent-hover);
+}
+
+/* Typography styles */
+h1, h2, h3 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.text-muted {
+  color: var(--text-secondary);
+}
+
+/* Layout helpers */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-2 { gap: 8px; }
+.gap-3 { gap: 12px; }
+.gap-4 { gap: 16px; }
+.gap-6 { gap: 24px; }
+.gap-8 { gap: 32px; }
+.mt-auto { margin-top: auto; }
+.w-full { width: 100%; }
+.text-center { text-align: center; }
+
+/* header styling */
+.app-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.app-title {
+  font-size: 2.2rem;
+  background: linear-gradient(to right, #fff, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* For staggered animations */
+.delay-1 { animation-delay: 0.1s; opacity: 0; }
+.delay-2 { animation-delay: 0.2s; opacity: 0; }
+.delay-3 { animation-delay: 0.3s; opacity: 0; }
+.delay-4 { animation-delay: 0.4s; opacity: 0; }
+
