@@ -11,7 +11,7 @@ function App() {
   const [devocionales, setDevocionales] = useState([]);
 
   useEffect(() => {
-    fetch('./public/devocionales.json')
+    fetch(`${import.meta.env.BASE_URL}devocionales.json`)
       .then(res => res.json())
       .then(data => {
         if (data && data.devocionales) {
