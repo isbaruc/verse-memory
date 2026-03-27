@@ -68,7 +68,7 @@ function App() {
         )}
       </header>
 
-      <main className="flex-col gap-4 w-full h-full" style={{ flex: 1 }}>
+      <main className="flex-col w-full" style={{ flex: 1, minHeight: 0 }}>
         {mode === 'select_user' && <UserSelector onSelect={handleUserSelect} />}
         {mode === 'home' && <Home onSelectMode={setMode} />}
         {mode === 'study' && <StudyMode data={userData} onBack={goHome} />}
