@@ -4,6 +4,7 @@ import UserSelector from './components/UserSelector'
 import Home from './components/Home'
 import StudyMode from './components/StudyMode'
 import PracticeMode from './components/PracticeMode'
+import ExamMode from './components/ExamMode'
 
 function App() {
   const [user, setUser] = useState(null);
@@ -69,10 +70,11 @@ function App() {
       </header>
 
       <main className="flex-col w-full" style={{ flex: 1, minHeight: 0 }}>
-        {mode === 'select_user' && <UserSelector onSelect={handleUserSelect} />}
+        {mode === 'select_user' && <UserSelector onSelect={handleUserSelect} onExam={() => setMode('exam')} />}
         {mode === 'home' && <Home onSelectMode={setMode} />}
         {mode === 'study' && <StudyMode data={userData} onBack={goHome} />}
         {mode === 'practice' && <PracticeMode data={userData} onBack={goHome} />}
+        {mode === 'exam' && <ExamMode allData={devocionales} onBack={() => setMode('select_user')} />}
       </main>
     </>
   )

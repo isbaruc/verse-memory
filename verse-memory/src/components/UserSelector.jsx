@@ -1,4 +1,4 @@
-export default function UserSelector({ onSelect }) {
+export default function UserSelector({ onSelect, onExam }) {
   const users = ["Karen", "Baruc", "Gaby", "Arely", "Beto", "Fredy"];
 
   return (
@@ -19,6 +19,16 @@ export default function UserSelector({ onSelect }) {
             {u}
           </button>
         ))}
+      </div>
+
+      <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '12px', marginTop: '4px' }}>
+        <button
+          className="btn delay-4 animate-fade-in"
+          onClick={onExam}
+          style={{ padding: '12px 20px', fontSize: '1rem', backgroundColor: 'rgba(245,158,11,0.2)', borderColor: 'rgba(245,158,11,0.4)' }}
+        >
+          🏆 Evaluación General
+        </button>
       </div>
     </div>
   );
