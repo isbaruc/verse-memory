@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 // ── Shared: a single tappable field row ────────────────────────────────────
 function FieldRow({ label, value, hidden, onToggle, italic = false }) {
@@ -34,8 +34,17 @@ function FieldRow({ label, value, hidden, onToggle, italic = false }) {
 }
 
 // ── Card for the scrollable list view ─────────────────────────────────────
-function ListCard({ item }) {
+function ListCard({ item, reviewMode }) {
   const [hidden, setHidden] = useState({ fecha: false, titulo: false, versiculo: false, cita: false });
+  
+  useEffect(() => {
+    if (reviewMode) {
+      setHidden({ fecha: false, titulo: true, versiculo: true, cita: true });
+    } else {
+      setHidden({ fecha: false, titulo: false, versiculo: false, cita: false });
+    }
+  }, [reviewMode]);
+
   const toggle = (field) => setHidden(prev => ({ ...prev, [field]: !prev[field] }));
 
   return (
@@ -49,8 +58,17 @@ function ListCard({ item }) {
 }
 
 // ── Card for the carousel view ─────────────────────────────────────────────
-function CarouselCard({ item, index }) {
+function CarouselCard({ item, index, reviewMode }) {
   const [hidden, setHidden] = useState({ fecha: false, titulo: false, versiculo: false, cita: false });
+
+  useEffect(() => {
+    if (reviewMode) {
+      setHidden({ fecha: false, titulo: true, versiculo: true, cita: true });
+    } else {
+      setHidden({ fecha: false, titulo: false, versiculo: false, cita: false });
+    }
+  }, [reviewMode]);
+
   const toggle = (field) => setHidden(prev => ({ ...prev, [field]: !prev[field] }));
 
   return (
@@ -86,6 +104,7 @@ function CarouselCard({ item, index }) {
 export default function StudyMode({ data, onBack }) {
   const scrollRef = useRef(null);
   const [viewMode, setViewMode] = useState('cards'); // 'cards' | 'list'
+  const [reviewMode, setReviewMode] = useState(false);
 
   if (!data || data.length === 0) {
     return (
@@ -115,6 +134,27 @@ export default function StudyMode({ data, onBack }) {
           {viewMode === 'cards' ? '📖 Devocionales' : '📋 Lista'}
         </h2>
         <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+          <button
+            onClick={() => setReviewMode(r => !r)}
+            title="Modo Repaso (Ocultar detalles)"
+            style={{
+              background: reviewMode ? 'rgba(16,185,129,0.2)' : 'rgba(255,255,255,0.1)',
+              border: reviewMode ? '1px solid var(--success)' : '1px solid rgba(255,255,255,0.2)',
+              color: reviewMode ? 'var(--success)' : 'white',
+              cursor: 'pointer',
+              borderRadius: '10px',
+              padding: '0 12px',
+              height: '38px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              transition: 'all 0.2s ease',
+              fontWeight: 600,
+              fontSize: '0.85rem'
+            }}
+          >
+            {reviewMode ? '🙈 Repaso' : '👁️ Normal'}
+          </button>
           <button
             onClick={() => setViewMode(v => v === 'cards' ? 'list' : 'cards')}
             title={viewMode === 'cards' ? 'Ver como lista' : 'Ver tarjetas'}
@@ -161,7 +201,7 @@ export default function StudyMode({ data, onBack }) {
             minHeight: 0, /* needed for flex child to shrink and scroll */
           }}
         >
-          {data.map(item => <ListCard key={item.id} item={item} />)}
+          {data.map(item => <ListCard key={item.id} item={item} reviewMode={reviewMode} />)}
         </div>
       )}
 
@@ -193,7 +233,7 @@ export default function StudyMode({ data, onBack }) {
             }}
           >
             {data.map((item, i) => (
-              <CarouselCard key={item.id} item={item} index={i} />
+              <CarouselCard key={item.id} item={item} index={i} reviewMode={reviewMode} />
             ))}
           </div>
 
